@@ -7,6 +7,8 @@ echo "export LD_LIBRARY_PATH=/data/data/com.termux/files/usr/lib/openssl-1.1" >>
 
 if [ ! -d "sqlmapzh" ]; then
     git clone --depth 1 https://github.com/kaliaaa1/sqlmapzh.git
+    
+    mv Termux-install-sqlmap/sqlmapzh ../sqlmapzh
 
 else
 
