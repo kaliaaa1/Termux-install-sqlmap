@@ -11,10 +11,8 @@ if [ ! -d "../sqlmapzh" ]; then
     mv Termux-install-sqlmap/sqlmapzh ../sqlmapzh
 fi 
 if [ ! -s "/data/data/com.termux/files/usr/bin/sqlmap" ]; then
-    chmod +x sqlmapzh/sqlmap.py
+    chmod +x ../sqlmapzh/sqlmap.py
 
-    ln -s /data/data/com.termux/files/home/sqlmapzh/sqlmap.py /data/data/com.termux/files/usr/bin/
-
-    mv ../usr/bin/sqlmap.py ../usr/bin/sqlmap
+    ln -s /data/data/com.termux/files/home/sqlmapzh/sqlmap.py /data/data/com.termux/files/usr/bin/sqlmap
 fi 
 sqlmap
